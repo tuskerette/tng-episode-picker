@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "tng episode picker",
   "main": "app.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "jest": "^26.4.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
