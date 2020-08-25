@@ -1,0 +1,23 @@
+{
+  "name": "tng-episode-picker",
+  "version": "1.0.0",
+  "description": "tng episode picker",
+  "main": "app.js",
+  "dependencies": {
+    "jest": "^26.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuskerette/tng-episode-picker.git"
+  },
+  "author": "valeria graffeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuskerette/tng-episode-picker/issues"
+  },
+  "homepage": "https://github.com/tuskerette/tng-episode-picker#readme"
+}
