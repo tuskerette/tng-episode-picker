@@ -1,7 +1,7 @@
 'use strict';
-let requestButton = document.getElementById('request-btn');
-let season = document.getElementById('season');
-let episode = document.getElementById('episode');
+const requestButton = document.getElementById('request-btn');
+const season = document.getElementById('season');
+const episode = document.getElementById('episode');
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max)) + 1;
