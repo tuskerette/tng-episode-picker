@@ -4,7 +4,8 @@ const season = document.getElementById('season');
 const episode = document.getElementById('episode');
 
 function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max)) + 1;
+  return Math.floor(Math.random() * Math.floor(max)) + 1; 
+  // plus one cause season and episode start at index 1
 }
 
 document.addEventListener('click', function (event) {

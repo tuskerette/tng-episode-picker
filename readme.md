@@ -9,7 +9,9 @@ You're welcome :)
 ### Install
 run `npm install`
 
-to run the jest test, run `jest <name-of-file.test.js>`
+### Test
+To run the jest test, run `jest <name-of-file.test.js>`
+or `npm run test`
 
 ### To do
 - [ ] add test with jest, just because
