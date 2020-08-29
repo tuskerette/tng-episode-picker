@@ -8,7 +8,7 @@ function getRandomInt(max) {
   // plus one cause season and episode start at index 1
 }
 
-document.addEventListener('click', function (event) {
+requestButton.addEventListener('click', function (event) {
     event.preventDefault();
     let s = getRandomInt(7);
     season.innerHTML = 'Season ' + s;
