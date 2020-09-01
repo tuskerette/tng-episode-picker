@@ -18,6 +18,6 @@ In order to be able to require a file in jest I went down the path of using a si
 It turns out that jest does not support jest, and it won't cause it is so 2004...and therefore, although I temporarily
 added a package.json, the jest file was not able to require (load) app.js.
 
-- [ ] fetch episode title/info from some API (?)
+- [ ] fetch episode title/info from some API -- yes from [stapi.co](http://stapi.co)!
 - [ ] link to watch on netflix/amazon prime video (?)
 
