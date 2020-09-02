@@ -12,11 +12,12 @@ function getRandomInt(max) {
 requestButton.addEventListener('click', function (event) {
     titleResult.removeAttribute('hidden');
     event.preventDefault();
-    let ep = 0;
+    let ep;
     let s = getRandomInt(7);
     season.innerHTML = 'Season ' + s;
     
     if(s == 2) {
+      // season 2 is the only one that has 22 episodes instead of 26	    
       ep = getRandomInt(22);
       episode.innerHTML = 'Episode ' + ep;
     } else {
@@ -25,17 +26,14 @@ requestButton.addEventListener('click', function (event) {
     }
 
     fetch('http://stapi.co/api/v1/rest/season?uid=SAMA000000163'+(s+2).toString())
+      // (s+2).toString() is because the API works by querying by uid, sequential, I looked it up on their API docs
+      // the scenario is easy enough to allow for these assumptions
       .then(response => response.json())
       .then(data => {
-	let epTitle = '';
 	let allEpisodes = data.season.episodes;
-	for(let i = 0; i < allEpisodes.length; i++) {
-	  if(allEpisodes[i].episodeNumber == ep) {
-	    epTitle = allEpisodes[i].title;
-	  }
+	const episodeResult = allEpisodes.find( ({ episodeNumber }) => episodeNumber === ep );
+	titleResult.innerHTML = 'Episode title: ' + episodeResult.title;
 	}
-	titleResult.innerHTML = 'Episode title: ' + epTitle;
-        }
       );
 }, false);
 
